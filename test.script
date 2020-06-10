@@ -1,0 +1,15 @@
+type=user
+count=10
+speed=1.0
+start data>>
+LaunchActivity(com.Android.browser,com.android.browser.BrowserActivity)//启动APP
+UserWait(2000)
+Tap(100,100) //点击搜索输入框
+DispatchString(test) //输入搜索字符串
+UserWait(1000)
+DispatchPress(66) //点击回车键搜索
+ProfileWait()     //等待5s
+Tap(100,100)      //点击搜索输入框
+DispatchPress(112) //点击删除清空输入框
+UserWait(1000)
+DispatchPress(KEYCODE_HOME)//退出APP回到主页
