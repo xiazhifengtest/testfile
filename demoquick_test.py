@@ -4,6 +4,7 @@
 from httprunner import HttpRunner, Config, Step, RunRequest
 
 
+# 注释
 class TestCaseDemoquick(HttpRunner):
     config = Config("testcase description")
 
